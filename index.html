@@ -101,7 +101,7 @@
     </p>
     <div class="mt-4">
       <a href="gallery.html" class="btn btn-primary me-2">Visit Our Store</a>
-      <a href="#contact" class="btn btn-outline-primary">Contact Us</a>
+      <a href="contact.html" class="btn btn-outline-primary">Contact Us</a>
     </div>
   </div>
 </section>
@@ -190,15 +190,45 @@
   </div>
 </section>
 
+<a href="https://wa.me/2348026312854"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- PAGE LOADER -->
+<div id="page-loader">
+  <img src="images/logo.png" alt="Loading Logo">
+</div>
+
 <!-- FOOTER -->
 <footer class="footer">
   <p>
-    ? 2025 More Grace & Blessing Nigeria Enterprise.<br>
-    All Rights Reserved.
+    © 2025 More Grace & Blessing Nigeria Enterprise.<br>
+    All Rights Reserved. <br>
+    Designed by <a style="color: cadetblue;" href="https://stoner1238.github.io/portfolio/" target="_blank"><i>Proxima a3</i></a>
   </p>
 </footer>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+  window.addEventListener("load", function () {
+    const loader = document.getElementById("page-loader");
+
+    if (!sessionStorage.getItem("loaderShown")) {
+      sessionStorage.setItem("loaderShown", "true");
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 8000);
+    } else {
+      loader.style.display = "none";
+    }
+  });
+</script>
+
 </body>
 </html>
